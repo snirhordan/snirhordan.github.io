@@ -1,6 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snir Hordan - PhD Student</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #004080;
+            text-decoration: underline;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        /* Main Content */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        /* Contact Details */
+        .contact p {
+            margin-bottom: 8px;
+        }
+        
+        /* Skills Lists */
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+        }
+        
+        /* Publications */
+        .publication {
+            margin-bottom: 20px;
+        }
+        
+        .publication-title {
+            font-style: italic;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-item h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .grade {
+            font-weight: bold;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
 <body>
-<embed src="snir_hordan_cv(7).pdf" width="800px" height="1000px" />
+    <header>
+        <h1>Snir Hordan</h1>
+        <h2>PhD Student</h2>
+    </header>
+    
+    <div class="container">
+        <div class="left-column">
+            <section class="contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:snirhordan@gmail.com">snirhordan@gmail.com</a></p>
+            </section>
+            
+            <section class="programming">
+                <h3>Programming</h3>
+                <ul>
+                    <li>PyTorch – Research Level</li>
+                    <li>C++ - Undergrad Level</li>
+                </ul>
+            </section>
+            
+            <section class="languages">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English Native</li>
+                    <li>Hebrew Native</li>
+                </ul>
+            </section>
+            
+            <section class="social-media">
+                <h3>Social Media</h3>
+                <ul>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/snirhordan/" target="_blank">https://www.linkedin.com/in/snirhordan/</a></li>
+                    <li>Google Scholar: Snir Hordan</li>
+                    <li>GitHub: <a href="https://github.com/intelliFinder" target="_blank">https://github.com/intelliFinder</a></li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="right-column">
+            <section class="profile">
+                <h3>Profile</h3>
+                <p>I'm a PhD student at the Technion in the field of Geometric Deep learning supervised by Dr. Nadav Dym. I research and develop GNNs that process geometric data such as point clouds. I have been successful at both theoretically reasoning the GNN implementations I propose and attaining state-of-the-art results on benchmark datasets. Papers I co-authored were accepted to top AI venues such as AAAI and ICML. I'm looking for a student research role.</p>
+            </section>
+            
+            <section class="publications">
+                <h3>Publications</h3>
+                <div class="publication">
+                    <p>Hordan, S., Amir, T., Dym, N. (2024) Weisfeiler Leman for Euclidean Equivariant Machine Learning. <span class="publication-title">The Forty-first International Conference on Machine Learning</span>.</p>
+                    <p><a href="https://arxiv.org/abs/2402.02484" target="_blank">https://arxiv.org/abs/2402.02484</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Hordan, S., Amir, T., Gortler, S. J., Dym, N. (2024). Complete Neural Networks for Complete Euclidean Graphs. <span class="publication-title">Proceedings of the AAAI Conference on Artificial Intelligence</span>, 38(11), 12482-12490.</p>
+                    <p><a href="https://doi.org/10.1609/aaai.v38i11.29141" target="_blank">https://doi.org/10.1609/aaai.v38i11.29141</a></p>
+                </div>
+            </section>
+            
+            <section class="education">
+                <h3>Education</h3>
+                
+                <div class="education-item">
+                    <h4>Technion</h4>
+                    <p>BSc. Mathematics (2017-2021)</p>
+                    <p>Grade: <span class="grade">89</span></p>
+                    <p>Relevant courses: Systems Programming (C++), Deep Learning</p>
+                </div>
+                
+                <div class="education-item">
+                    <h4>Technion</h4>
+                    <p>PhD Applied Mathematics (2022-2027 Expected)</p>
+                    <p>Grade: <span class="grade">95</span></p>
+                    <p>Direct Track PhD</p>
+                    <p>Recipient of Technion's Faculty of Applied Math Excellence Scholarship</p>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
-</html> 
+</html>
