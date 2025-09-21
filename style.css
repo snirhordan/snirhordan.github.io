@@ -97,3 +97,9 @@ p {
     justify-content: center;
     margin-top: 20px;
 }
+
+/* --- Spotlight Style --- */
+.spotlight {
+    color: red; /* Bright red color */
+    font-weight: bold; /* Make it bold for emphasis */
+}
