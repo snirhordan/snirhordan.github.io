@@ -15,15 +15,34 @@
   <meta name="twitter:description" content="PhD Candidate at Technion researching Geometric Deep Learning.">
   <meta name="twitter:image" content="https://snirhordan.github.io/profile.jpg">
   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Snir Hordan",
+    "url": "https://snirhordan.github.io",
+    "jobTitle": "PhD Candidate",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Technion, Israel Institute of Technology"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=T2YJQPoAAAAJ",
+      "https://github.com/snirhordan",
+      "https://www.linkedin.com/in/snir-hordan"
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav id="navbar">
+<nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#about" class="nav-name">Snir Hordan</a>
     <div class="nav-links">
@@ -37,13 +56,13 @@
   </div>
 </nav>
 
-<main>
+<main role="main">
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="about-section">
     <div class="about-container">
       <div class="about-photo">
-        <img src="profile.jpg" alt="Snir Hordan">
+        <img src="profile.jpg" alt="Portrait photo of Snir Hordan">
       </div>
       <div class="about-text">
         <h1>Snir Hordan</h1>
@@ -53,17 +72,14 @@
           Faculty of Mathematics<br>
           Supervised by <a href="https://nadavdym.github.io/">Asst. Prof. Nadav Dym</a>
         </p>
-
         <p class="about-bio">
           I research machine learning models that process geometric data such as graphs and point clouds.
           My work focuses on two interlocking paradigms: identifying the shortcomings of geometric models and developing
           geometrically complete models, favorably with low-dimensional features, yielding more powerful
           architectures with moderate computational cost.
         </p>
-
         <p class="about-domain"><strong>Research area:</strong> Geometric Deep Learning</p>
-
-        <div class="about-links">
+        <div class="about-links" aria-label="Contact and profile links">
           <a href="mailto:snirhordan@campus.technion.ac.il">Email</a>
           <span class="sep">/</span>
           <a href="https://scholar.google.com/citations?user=T2YJQPoAAAAJ&hl=en">Google Scholar</a>
@@ -142,11 +158,11 @@
         <strong>Research Excellence Award in Memory of Prof. Lior Merkin</strong>, Technion, Department of Applied Mathematics.
       </li>
       <li>
-        <span class="award-year">2022 - Present</span>
+        <span class="award-year">2023</span>
         <strong>Department of Applied Mathematics Excellence Scholarship</strong>, Technion.
       </li>
       <li>
-        <span class="award-year">2017 - 2021</span>
+        <span class="award-year">2020</span>
         <strong>Dean's Excellence Award</strong>, B.Sc. Mathematics, Technion.
       </li>
     </ul>
@@ -172,6 +188,10 @@
         </p>
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2506.05530" class="pub-btn">arXiv</a>
+          <button class="pub-btn abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract-content">
+          We prove that spectral graph neural networks are incomplete on graphs with a simple spectrum, establishing fundamental expressiveness limitations of spectral GNN architectures. We further propose a novel spectral GNN architecture that overcomes these limitations.
         </div>
       </div>
     </div>
@@ -192,6 +212,10 @@
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2402.02484" class="pub-btn">arXiv</a>
           <a href="https://icml.cc/Conferences/2024" class="pub-btn">ICML 2024</a>
+          <button class="pub-btn abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract-content">
+          We construct the first universal and equivariant 3D point cloud network with polynomial complexity, solving a key open problem in the field. We achieve state-of-the-art results on molecular conformation generation benchmarks.
         </div>
       </div>
     </div>
@@ -212,6 +236,10 @@
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2301.13821" class="pub-btn">arXiv</a>
           <a href="https://aaai-24.aaai.org/" class="pub-btn">AAAI 2024</a>
+          <button class="pub-btn abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract-content">
+          We construct a universal invariant 3D point cloud network with polynomial time complexity. The architecture is provably complete for Euclidean graphs, developed in collaboration with Harvard University.
         </div>
       </div>
     </div>
@@ -279,6 +307,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
 });
+
+// Active nav link tracking
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-80px 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+
+// Abstract toggle
+function toggleAbstract(btn) {
+  const content = btn.closest('.pub-details').querySelector('.abstract-content');
+  const isOpen = content.classList.toggle('open');
+  btn.textContent = isOpen ? 'Close' : 'Abstract';
+}
 </script>
 
 </body>
