@@ -202,6 +202,22 @@ h2 {
   color: #1565c0;
 }
 
+/* ===== Collaborators Section ===== */
+.collaborators-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.collaborators-list li {
+  font-size: 0.96rem;
+}
+
+.collaborators-list li a {
+  font-weight: 500;
+}
+
 /* ===== Teaching Section ===== */
 .teaching-item {
   padding: 16px 0;
