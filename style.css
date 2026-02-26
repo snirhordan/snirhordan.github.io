@@ -136,6 +136,13 @@ h2 {
   margin-bottom: 6px;
 }
 
+.about-tagline {
+  font-size: 1rem;
+  color: #6e6e73;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 .about-affiliation {
   font-size: 0.95rem;
   color: #6e6e73;
@@ -205,6 +212,34 @@ h2 {
   padding: 1px 8px;
   border-radius: 4px;
   margin-left: 4px;
+}
+
+/* News show-more toggle */
+.news-hidden {
+  display: none;
+}
+.news-hidden.news-visible {
+  display: flex;
+}
+
+.show-more-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1565c0;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  font-family: inherit;
+}
+.show-more-btn:hover {
+  background: #1565c0;
+  color: #fff;
+  border-color: #1565c0;
 }
 
 /* ===== Awards Section ===== */
@@ -342,6 +377,42 @@ h2 {
 .teaching-details {
   font-size: 0.95rem;
   color: #6e6e73;
+}
+
+/* ===== Talks Section ===== */
+.talks-list {
+  list-style: none;
+}
+
+.talks-list li {
+  padding: 12px 12px;
+  margin: 0 -12px;
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1d1d1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.talks-list li:hover {
+  background-color: rgba(21, 101, 192, 0.04);
+}
+
+.talks-list li:last-child { border-bottom: none; }
+
+.talk-venue {
+  flex: 1;
+}
+
+.talk-date {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #1565c0;
 }
 
 /* ===== Publications Section ===== */
@@ -532,6 +603,11 @@ footer {
     flex-direction: column;
     gap: 2px;
   }
+
+  .talks-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
 
 /* ===== Narrow mobile ===== */
@@ -561,6 +637,8 @@ a:focus-visible, .pub-btn:focus-visible {
   .pub-card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
   .pub-btn { border: 1px solid #333; color: #333; background: none; }
   .abstract-content { display: none; }
+  .show-more-btn { display: none; }
+  .news-hidden { display: flex; }
   a { color: #333; }
   a::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #6e6e73; }
   footer { display: none; }

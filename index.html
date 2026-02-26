@@ -50,6 +50,7 @@
       <a href="#news">News</a>
       <a href="#awards">Awards</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
       <a href="#code">Code</a>
       <a href="#teaching">Teaching</a>
       <a href="snir_hordan_cv.pdf">CV</a>
@@ -68,6 +69,7 @@
       <div class="about-text">
         <h1>Snir Hordan</h1>
         <p class="about-title">PhD Candidate</p>
+        <p class="about-tagline">Building provably complete and efficient neural networks for geometric data.</p>
         <p class="about-affiliation">
           <a href="https://www.technion.ac.il/">Technion, Israel Institute of Technology</a><br>
           Faculty of Mathematics<br>
@@ -79,7 +81,6 @@
           geometrically complete models, favorably with low-dimensional features, yielding more powerful
           architectures with moderate computational cost.
         </p>
-        <p class="about-domain"><strong>Research area:</strong> Geometric Deep Learning</p>
         <div class="about-links" aria-label="Contact and profile links">
           <a href="mailto:snirhordan@campus.technion.ac.il">Email</a>
           <span class="sep">/</span>
@@ -100,6 +101,10 @@
     <h2>News</h2>
     <ul class="news-list">
       <li>
+        <span class="news-date">2026</span>
+        Received the <strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (6 out of all graduate students, Technion).
+      </li>
+      <li>
         <span class="news-date">Jan 2026</span>
         Talk at the <strong>Pizza Seminar</strong>, Technion.
       </li>
@@ -108,38 +113,27 @@
         Invited talk at the <strong><a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a></strong>, New York.
       </li>
       <li>
-        <span class="news-date">2026</span>
-        Received the <strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (6 out of all graduate students, Technion).
-      </li>
-      <li>
         <span class="news-date">2025</span>
         Our paper on spectral GNNs accepted at <strong>NeurIPS 2025</strong> as a <span class="spotlight">Spotlight (top 3%)</span>.
       </li>
       <li>
         <span class="news-date">2025</span>
-        Awarded the <strong>Gloria and Ken Levy Scholarship</strong>.
-      </li>
-      <li>
-        <span class="news-date">2024</span>
-        Received the <strong>Lior Merkin Memorial Award</strong> for outstanding achievements in mathematics, Technion.
-      </li>
-      <li>
-        <span class="news-date">2025</span>
         Co-organized <strong>Learning on Graphs</strong> workshop in Tel Aviv with Maya Bechler-Speicher and Guy Bar-Shalom.
       </li>
-      <li>
+      <li class="news-hidden">
         <span class="news-date">2024</span>
         Talk at the <strong><a href="https://www.idsai.technion.ac.il/">Israel Data Science Initiative (IDSI)</a></strong>.
       </li>
-      <li>
+      <li class="news-hidden">
         <span class="news-date">2024</span>
         Paper on Weisfeiler Leman for Euclidean equivariant ML presented at <strong>ICML 2024</strong>.
       </li>
-      <li>
+      <li class="news-hidden">
         <span class="news-date">2024</span>
         Paper on complete neural networks for Euclidean graphs presented at <strong>AAAI 2024</strong>.
       </li>
     </ul>
+    <button class="show-more-btn" onclick="toggleNews(this)">Show more</button>
   </section>
 
   <!-- Awards Section -->
@@ -182,7 +176,7 @@
         <h3 class="pub-title">
           <a href="https://arxiv.org/abs/2506.05530">Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum</a>
         </h3>
-        <p class="pub-authors"><strong>S Hordan</strong>, M Bechler-Speicher, G Lifshitz, N Dym</p>
+        <p class="pub-authors"><strong>S Hordan</strong>, <a href="https://scholar.google.com/citations?user=5Fj_AUoAAAAJ&hl=en">M Bechler-Speicher</a>, G Lifshitz, <a href="https://nadavdym.github.io/">N Dym</a></p>
         <p class="pub-venue">
           Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025
           <span class="spotlight">Spotlight, top 3%</span>
@@ -208,7 +202,7 @@
         <h3 class="pub-title">
           <a href="https://arxiv.org/abs/2402.02484">Weisfeiler Leman for Euclidean Equivariant Machine Learning</a>
         </h3>
-        <p class="pub-authors"><strong>S Hordan</strong>, T Amir, N Dym</p>
+        <p class="pub-authors"><strong>S Hordan</strong>, <a href="https://tal-amir.github.io/">T Amir</a>, <a href="https://nadavdym.github.io/">N Dym</a></p>
         <p class="pub-venue">
           International Conference on Machine Learning (<strong>ICML</strong>), 2024
         </p>
@@ -233,7 +227,7 @@
         <h3 class="pub-title">
           <a href="https://arxiv.org/abs/2301.13821">Complete Neural Networks for Euclidean Graphs</a>
         </h3>
-        <p class="pub-authors"><strong>S Hordan</strong>, T Amir, SJ Gortler, N Dym</p>
+        <p class="pub-authors"><strong>S Hordan</strong>, <a href="https://tal-amir.github.io/">T Amir</a>, <a href="https://www.eecs.harvard.edu/~sjg/">SJ Gortler</a>, <a href="https://nadavdym.github.io/">N Dym</a></p>
         <p class="pub-venue">
           AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2024
         </p>
@@ -248,6 +242,29 @@
       </div>
     </div>
 
+  </section>
+
+  <!-- Talks Section -->
+  <section id="talks">
+    <h2>Talks</h2>
+    <ul class="talks-list">
+      <li>
+        <span class="talk-venue">Pizza Seminar, Technion</span>
+        <span class="talk-date">Jan 2026</span>
+      </li>
+      <li>
+        <span class="talk-venue"><a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a>, New York</span>
+        <span class="talk-date">Dec 2025</span>
+      </li>
+      <li>
+        <span class="talk-venue">Learning on Graphs Workshop, Tel Aviv (Co-organizer)</span>
+        <span class="talk-date">2025</span>
+      </li>
+      <li>
+        <span class="talk-venue"><a href="https://www.idsai.technion.ac.il/">Israel Data Science Initiative (IDSI)</a></span>
+        <span class="talk-date">2024</span>
+      </li>
+    </ul>
   </section>
 
   <!-- Code Section -->
@@ -315,7 +332,7 @@
       <a href="https://github.com/snirhordan">GitHub</a>
       <a href="https://www.linkedin.com/in/senirhordan">LinkedIn</a>
     </div>
-    <p class="footer-copy">&copy; 2026 Snir Hordan</p>
+    <p class="footer-copy">&copy; 2026 Snir Hordan &middot; Last updated Feb 2026</p>
   </div>
 </footer>
 
@@ -357,6 +374,14 @@ function toggleAbstract(btn) {
   const content = btn.closest('.pub-details').querySelector('.abstract-content');
   const isOpen = content.classList.toggle('open');
   btn.textContent = isOpen ? 'Close' : 'Abstract';
+}
+
+// News show more toggle
+function toggleNews(btn) {
+  const hidden = document.querySelectorAll('.news-hidden');
+  const showing = hidden[0] && hidden[0].style.display !== 'none' && hidden[0].classList.contains('news-visible');
+  hidden.forEach(li => li.classList.toggle('news-visible'));
+  btn.textContent = showing ? 'Show more' : 'Show less';
 }
 </script>
 
