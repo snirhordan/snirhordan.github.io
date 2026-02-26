@@ -177,6 +177,71 @@ h2 {
   margin-left: 4px;
 }
 
+/* ===== Awards Section ===== */
+.awards-list {
+  list-style: none;
+}
+
+.awards-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 0.96rem;
+  color: #444;
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.awards-list li:last-child { border-bottom: none; }
+
+.award-year {
+  flex-shrink: 0;
+  width: 110px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #1565c0;
+}
+
+/* ===== Teaching Section ===== */
+.teaching-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.teaching-item:last-child { border-bottom: none; }
+
+.teaching-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.teaching-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.teaching-year {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #1565c0;
+  flex-shrink: 0;
+}
+
+.teaching-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.teaching-details {
+  font-size: 0.93rem;
+  color: #666;
+}
+
 /* ===== Publications Section ===== */
 .pub-card {
   display: flex;
@@ -308,5 +373,16 @@ footer {
   .pub-thumb img { width: 100%; }
   .pub-links { justify-content: center; }
 
-  .nav-links a { margin-left: 16px; font-size: 0.88rem; }
+  .nav-links a { margin-left: 12px; font-size: 0.84rem; }
+
+  .awards-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .award-year { width: auto; }
+
+  .teaching-header {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
