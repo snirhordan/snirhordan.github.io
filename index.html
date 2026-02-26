@@ -1,78 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Snir Hordan</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snir Hordan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="container">
-
-<img src="profile.jpg" alt="Snir Hordan" class="profile-pic">
-
-<h1>Snir Hordan</h1>
-
-<p>
-PhD Candidate at the Technion - Israel Institute of Technology.
-</p>
-<p>
-Domain: Geometric Deep Learning.
-</p>
-<p>
-<a href="https://scholar.google.com/citations?user=T2YJQPoAAAAJ&hl=iw">Google Scholar</a> | <a href="https://snirhordan.github.io/">Homepage</a>
-</p>
-
-<h2>About Me</h2>
-<p>
-I am a PhD candidate at the Technion, supervised by Dr. Nadav Dym, where I research machine learning models that process geometric data, such as graphs and point clouds. 
-
-This is performed via two interlocking paradigms: identifying the shortcomings of geometric models and, consequently, developing geometrically complete models, favorably with low-dimensional features. This yields more powerful models with moderate computational cost.
-</p>
-
-<h2>Publications</h2>
-<ul>
-    <li>
-        <div class="publication">
-            <div class="pub-info">
-                <h3><a href="https://arxiv.org/abs/2506.05530">Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum</a></h3>
-                <p>S Hordan, M Bechler-Speicher, G Lifshitz, N Dym</p>
-                <p><i>To be presented at the <a href="https://neurips.cc/">Conference on Neural Information Processing Systems (NeurIPS)</a>, 2025 (<span class="spotlight">Spotlight 3% acceptance rate</span>)</i></p>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="publication">
-            <div class="pub-info">
-                <h3><a href="https://arxiv.org/abs/2402.02484">Weisfeiler Leman for Euclidean Equivariant Machine Learning</a></h3>
-                <p>S Hordan, T Amir, N Dym</p>
-                <p><i>Presented at the <a href="https://icml.cc/Conferences/2024">International Conference on Machine Learning (ICML)</a>, 2024</i></p>
-            </div>
-            <div class="pub-image">
-                <img src="paper1.png" alt="Weisfeiler Leman Paper Image">
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="publication">
-            <div class="pub-info">
-                <h3><a href="https://arxiv.org/abs/2301.13821">Complete Neural Networks for Euclidean Graphs</a></h3>
-                <p>S Hordan, T Amir, SJ Gortler, N Dym</p>
-                <p><i>Presented at the <a href="https://aaai-24.aaai.org/">AAAI Conference on Artificial Intelligence (AAAI)</a>, 2024</i></p>
-            </div>
-        </div>
-    </li>
-</ul>
-
-<h2>Connect with Me</h2>
-<div class="linkedin-embed">
-    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="snir-hordan">
-        <a class="LI-simple-link" href=https://www.linkedin.com/in/senirhordan?trk=profile-badge'>Snir Hordan</a>
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#about" class="nav-name">Snir Hordan</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="snir_hordan_cv.pdf">CV</a>
     </div>
-</div>
+  </div>
+</nav>
 
-</div>
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=643NoiMUTLgQmK4Z078tt-4VfrSfaI0vUgefn6Pv2Ws"></script>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<main>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="profile.jpg" alt="Snir Hordan">
+      </div>
+      <div class="about-text">
+        <h1>Snir Hordan</h1>
+        <p class="about-title">PhD Candidate</p>
+        <p class="about-affiliation">
+          <a href="https://www.technion.ac.il/">Technion &ndash; Israel Institute of Technology</a><br>
+          Faculty of Mathematics<br>
+          Supervised by <a href="https://nadavdym.github.io/">Dr. Nadav Dym</a>
+        </p>
+
+        <p class="about-bio">
+          I research machine learning models that process geometric data such as graphs and point clouds.
+          My work focuses on two interlocking paradigms: identifying the shortcomings of geometric models and developing
+          geometrically complete models &mdash; favorably with low-dimensional features &mdash; yielding more powerful
+          architectures with moderate computational cost.
+        </p>
+
+        <p class="about-domain"><strong>Research area:</strong> Geometric Deep Learning</p>
+
+        <div class="about-links">
+          <a href="mailto:snirhordan@campus.technion.ac.il">Email</a>
+          <span class="sep">/</span>
+          <a href="https://scholar.google.com/citations?user=T2YJQPoAAAAJ&hl=en">Google Scholar</a>
+          <span class="sep">/</span>
+          <a href="https://github.com/snirhordan">GitHub</a>
+          <span class="sep">/</span>
+          <a href="https://www.linkedin.com/in/snir-hordan">LinkedIn</a>
+          <span class="sep">/</span>
+          <a href="snir_hordan_cv.pdf">CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">2025/2026</span>
+        Received the <strong>Jacob's Excellent Paper Award</strong> from the Technion.
+      </li>
+      <li>
+        <span class="news-date">2025</span>
+        Awarded the <strong>Gloria and Ken Levy Scholarship</strong>.
+      </li>
+      <li>
+        <span class="news-date">2025</span>
+        Received the <strong>Lior Merkin Memorial Award</strong> for outstanding achievements in mathematics, Technion.
+      </li>
+      <li>
+        <span class="news-date">Dec 2025</span>
+        Invited talk at the <strong><a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a></strong>, New York.
+      </li>
+      <li>
+        <span class="news-date">2025</span>
+        Our paper on spectral GNNs accepted at <strong>NeurIPS 2025</strong> as a <span class="spotlight">Spotlight (top 3%)</span>.
+      </li>
+      <li>
+        <span class="news-date">2025</span>
+        Co-organized <strong>Learning on Graphs</strong> workshop in Tel Aviv with Maya Bechler-Speicher and Guy Bar-Shalom.
+      </li>
+      <li>
+        <span class="news-date">2024</span>
+        Talk at the <strong><a href="https://www.idsai.technion.ac.il/">Israel Data Science Initiative (IDSI)</a></strong>.
+      </li>
+      <li>
+        <span class="news-date">2024</span>
+        Talk at the <strong>Pizza Seminar</strong>, Technion.
+      </li>
+      <li>
+        <span class="news-date">2024</span>
+        Paper on Weisfeiler Leman for Euclidean equivariant ML presented at <strong>ICML 2024</strong>.
+      </li>
+      <li>
+        <span class="news-date">2024</span>
+        Paper on complete neural networks for Euclidean graphs presented at <strong>AAAI 2024</strong>.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <!-- Paper 1: Spectral GNN -->
+    <div class="pub-card">
+      <div class="pub-thumb">
+        <img src="projects/spectral-gnn/rep.png" alt="Spectral GNN illustration">
+      </div>
+      <div class="pub-details">
+        <h3 class="pub-title">
+          <a href="https://arxiv.org/abs/2506.05530">Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum</a>
+        </h3>
+        <p class="pub-authors">S Hordan, M Bechler-Speicher, G Lifshitz, N Dym</p>
+        <p class="pub-venue">
+          Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025
+          <span class="spotlight">Spotlight &mdash; top 3%</span>
+        </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2506.05530" class="pub-btn">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper 2: WL Euclidean -->
+    <div class="pub-card">
+      <div class="pub-thumb">
+        <img src="projects/wl-euclidean/rep.png" alt="WL for Euclidean equivariant ML">
+      </div>
+      <div class="pub-details">
+        <h3 class="pub-title">
+          <a href="https://arxiv.org/abs/2402.02484">Weisfeiler Leman for Euclidean Equivariant Machine Learning</a>
+        </h3>
+        <p class="pub-authors">S Hordan, T Amir, N Dym</p>
+        <p class="pub-venue">
+          International Conference on Machine Learning (<strong>ICML</strong>), 2024
+        </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2402.02484" class="pub-btn">arXiv</a>
+          <a href="https://icml.cc/Conferences/2024" class="pub-btn">ICML 2024</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper 3: Complete NN -->
+    <div class="pub-card">
+      <div class="pub-thumb">
+        <img src="projects/complete-nn/rep.svg" alt="Complete neural networks for Euclidean graphs">
+      </div>
+      <div class="pub-details">
+        <h3 class="pub-title">
+          <a href="https://arxiv.org/abs/2301.13821">Complete Neural Networks for Euclidean Graphs</a>
+        </h3>
+        <p class="pub-authors">S Hordan, T Amir, SJ Gortler, N Dym</p>
+        <p class="pub-venue">
+          AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2024
+        </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2301.13821" class="pub-btn">arXiv</a>
+          <a href="https://aaai-24.aaai.org/" class="pub-btn">AAAI 2024</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="mailto:snirhordan@campus.technion.ac.il">Email</a>
+      <a href="https://scholar.google.com/citations?user=T2YJQPoAAAAJ&hl=en">Google Scholar</a>
+      <a href="https://github.com/snirhordan">GitHub</a>
+      <a href="https://www.linkedin.com/in/snir-hordan">LinkedIn</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Snir Hordan</p>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const navHeight = document.getElementById('navbar').offsetHeight;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
 
 </body>
 </html>
