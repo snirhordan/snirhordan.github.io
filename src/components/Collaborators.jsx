@@ -7,7 +7,7 @@ export default function Collaborators() {
       <ul className="collaborators-list">
         {collaborators.map((person) => (
           <li key={person.name}>
-            <a href={person.url}>{person.name}</a>
+            <a href={person.url} className="collab-pill">{person.name}</a>
           </li>
         ))}
       </ul>
