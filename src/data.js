@@ -91,6 +91,26 @@ export const awards = [
 
 export const publications = [
   {
+    id: 'approx-rates',
+    title: 'Quantitative Approximation Rates for Group Equivariant Learning',
+    titleUrl: 'https://arxiv.org/abs/2602.20370',
+    authors: [
+      { name: 'JW Siegel', url: 'https://jwsiegel2510.github.io/' },
+      { name: 'S Hordan', bold: true },
+      { name: 'H Lawrence', url: 'https://hannahlawrence.github.io/' },
+      { name: 'A Syed' },
+      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+    ],
+    venue: 'arXiv preprint',
+    venueShort: 'arXiv',
+    year: 2026,
+    image: null,
+    abstract: 'The universal approximation theorem establishes that neural networks can approximate any continuous function on a compact set. Later works in approximation theory provide quantitative approximation rates for ReLU networks on the class of α-Hölder functions f: [0,1]^N → ℝ. The goal of this paper is to provide similar quantitative approximation results in the context of group equivariant learning, where the learned α-Hölder function is known to obey certain group symmetries. While there has been much interest in the literature in understanding the universal approximation properties of equivariant models, very few quantitative approximation results are known for equivariant models. In this paper, we bridge this gap by deriving quantitative approximation rates for several prominent group-equivariant and invariant architectures. The architectures that we consider include: the permutation-invariant Deep Sets architecture; the permutation-equivariant Sumformer and Transformer architectures; joint invariance to permutations and rigid motions using invariant networks based on frame averaging; and general bi-Lipschitz invariant models. Overall, we show that equally-sized ReLU MLPs and equivariant architectures are equally expressive over equivariant functions. Thus, hard-coding equivariance does not result in a loss of expressivity or approximation power in these models.',
+    links: [
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2602.20370' },
+    ],
+  },
+  {
     id: 'spectral-gnn',
     title: 'Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum',
     titleUrl: 'https://arxiv.org/abs/2506.05530',
@@ -191,6 +211,8 @@ export const collaborators = [
   { name: 'Maya Bechler-Speicher', url: 'https://scholar.google.com/citations?user=5Fj_AUoAAAAJ&hl=en' },
   { name: 'Tal Amir', url: 'https://tal-amir.github.io/' },
   { name: 'Steven J. Gortler', url: 'https://www.eecs.harvard.edu/~sjg/' },
+  { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
+  { name: 'Gur Lifshitz', url: 'https://dblp.org/pid/287/1920.html' },
 ];
 
 export const teaching = [

@@ -17,9 +17,11 @@ export default function PublicationCard({ pub }) {
 
   return (
     <div className="pub-card">
-      <div className="pub-thumb">
-        <img src={pub.image} alt={pub.imageAlt} />
-      </div>
+      {pub.image && (
+        <div className="pub-thumb">
+          <img src={pub.image} alt={pub.imageAlt} />
+        </div>
+      )}
       <div className="pub-details">
         <h3 className="pub-title">
           <a href={pub.titleUrl}>{pub.title}</a>
