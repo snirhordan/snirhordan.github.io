@@ -212,7 +212,7 @@ export const collaborators = [
   { name: 'Tal Amir', url: 'https://tal-amir.github.io/' },
   { name: 'Steven J. Gortler', url: 'https://www.eecs.harvard.edu/~sjg/' },
   { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
-  { name: 'Gur Lifshitz', url: 'https://dblp.org/pid/287/1920.html' },
+  { name: 'Gur Lifshitz', url: 'https://www.semanticscholar.org/author/2052395556' },
 ];
 
 export const teaching = [
