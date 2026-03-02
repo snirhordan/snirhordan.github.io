@@ -113,6 +113,7 @@ main {
 
 section {
   margin-bottom: 72px;
+  padding: 32px;
 }
 
 h1, h2 {
@@ -131,7 +132,6 @@ h2 {
 /* ===== Alternating Section Backgrounds ===== */
 main > section:nth-child(even) {
   background: var(--color-card);
-  padding: 32px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 }
@@ -698,7 +698,7 @@ footer {
     gap: 2px;
   }
 
-  main > section:nth-child(even) {
+  section {
     padding: 20px;
   }
 }
