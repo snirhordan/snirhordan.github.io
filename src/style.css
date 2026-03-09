@@ -361,6 +361,134 @@ main > section:nth-child(even) {
   margin-right: 4px;
 }
 
+/* ===== Skills Section ===== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.skill-group h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-accent-bg);
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.skill-pill:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* ===== Insights Section ===== */
+.insights-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+  margin-top: -16px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.insight-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+.insight-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.insight-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.insight-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.insight-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.insight-domains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.domain-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* ===== Code Card Header ===== */
+.code-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.code-card-header h3 {
+  margin-bottom: 0;
+}
+
+.code-highlight {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-spotlight);
+  background: var(--color-spotlight-bg);
+  padding: 1px 8px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
 /* ===== Collaborators Section ===== */
 .collaborators-list {
   list-style: none;

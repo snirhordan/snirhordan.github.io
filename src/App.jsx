@@ -2,6 +2,8 @@ import useScrollReveal from './hooks/useScrollReveal'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import News from './components/News'
+import Skills from './components/Skills'
+import Insights from './components/Insights'
 import Awards from './components/Awards'
 import Publications from './components/Publications'
 import Talks from './components/Talks'
@@ -18,6 +20,8 @@ export default function App() {
       <main role="main">
         <About />
         <News />
+        <Skills />
+        <Insights />
         <Awards />
         <Publications />
         <Talks />

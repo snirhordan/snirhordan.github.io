@@ -7,7 +7,10 @@ export default function Code() {
       <div className="code-grid">
         {codeProjects.map((project) => (
           <a key={project.name} href={project.url} className="code-card">
-            <h3>{project.name}</h3>
+            <div className="code-card-header">
+              <h3>{project.name}</h3>
+              {project.highlight && <span className="code-highlight">{project.highlight}</span>}
+            </div>
             <p>{project.description}</p>
             {project.tags.map((tag) => (
               <span key={tag} className="code-tag">{tag}</span>

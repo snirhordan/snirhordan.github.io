@@ -2,7 +2,7 @@ export const siteData = {
   name: 'Snir Hordan',
   title: 'PhD Candidate, Applied Mathematics',
   tagline: 'Building provably complete and efficient neural networks for geometric data.',
-  bio: 'I research machine learning models that process geometric data such as graphs and point clouds. My work focuses on two interlocking paradigms: identifying the shortcomings of geometric models and developing geometrically complete models, favorably with low-dimensional features, yielding more powerful architectures with moderate computational cost.',
+  bio: 'I research machine learning models that process geometric data such as graphs and point clouds. My work focuses on identifying fundamental limitations of geometric models and developing provably complete architectures with moderate computational cost. These methods have direct applications in drug discovery, molecular simulation, and 3D computer vision.',
   affiliation: {
     university: { name: 'Technion, Israel Institute of Technology', url: 'https://www.technion.ac.il/' },
     faculty: 'Faculty of Mathematics',
@@ -20,11 +20,11 @@ export const siteData = {
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'News', href: '#news' },
-  { label: 'Awards', href: '#awards' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Insights', href: '#insights' },
   { label: 'Publications', href: '#publications' },
-  { label: 'Talks', href: '#talks' },
   { label: 'Code', href: '#code' },
-  { label: 'Teaching', href: '#teaching' },
+  { label: 'Talks', href: '#talks' },
   { label: 'CV', href: 'snir_hordan_cv.pdf' },
 ];
 
@@ -188,19 +188,22 @@ export const codeProjects = [
   {
     name: 'equiEPNN',
     url: 'https://github.com/IntelliFinder/equiEPNN',
-    description: 'Equivariant spectral GNN architecture for molecular property prediction. Accompanies the NeurIPS 2025 paper.',
+    description: 'Equivariant spectral GNN for molecular property prediction. Fixes fundamental expressiveness limitations of standard spectral architectures.',
+    highlight: 'NeurIPS 2025 Spotlight',
     tags: ['Python', 'PyTorch', 'CUDA'],
   },
   {
     name: 'welnet',
     url: 'https://github.com/IntelliFinder/welnet',
-    description: 'First universal and equivariant 3D point cloud network with polynomial complexity. SOTA on GEOM-QM9 molecular conformation generation. Accompanies the ICML 2024 paper.',
+    description: 'Universal equivariant 3D point cloud network with polynomial complexity. Achieves SOTA on molecular conformation generation (GEOM-QM9).',
+    highlight: 'ICML 2024',
     tags: ['Python', 'PyTorch Geometric'],
   },
   {
     name: 'channels_epnn',
     url: 'https://github.com/IntelliFinder/channels_epnn',
-    description: 'Channel-based spectral GNN implementation for molecular property prediction. Accompanies the NeurIPS 2025 paper.',
+    description: 'Channel-based spectral GNN for molecular property prediction with improved expressiveness over standard spectral methods.',
+    highlight: 'NeurIPS 2025',
     tags: ['Python', 'PyTorch'],
   },
 ];
@@ -222,4 +225,31 @@ export const teaching = [
     role: 'Head Teaching Assistant',
     details: 'Technion, Electrical and Computer Engineering Faculty. Co-wrote a new course with <a href="https://haggaim.github.io/">Asst. Prof. Haggai Maron</a>.',
   },
+];
+
+export const insights = [
+  {
+    title: 'Why Your GNN Fails on Symmetric Molecules',
+    summary: 'Spectral graph neural networks are a go-to tool for molecular property prediction, but we proved they have a fundamental blind spot: they cannot distinguish certain graphs even when the spectrum is unique. We built a fix that restores full expressiveness without blowing up compute.',
+    domains: ['Drug Discovery', 'Materials Science'],
+    paperUrl: 'https://arxiv.org/abs/2506.05530',
+  },
+  {
+    title: 'Processing 3D Point Clouds Without Exponential Blowup',
+    summary: 'Complete 3D point cloud networks existed before, but required exponential time — impractical for real molecules. We developed the first polynomial-time universal architecture and hit state-of-the-art on molecular conformation generation.',
+    domains: ['Molecular Simulation', '3D Vision', 'Robotics'],
+    paperUrl: 'https://arxiv.org/abs/2402.02484',
+  },
+  {
+    title: 'Hard-Coding Symmetry Doesn\'t Cost You Expressiveness',
+    summary: 'A common worry: do equivariant architectures sacrifice approximation power by constraining the model? We proved they don\'t — equivariant networks match unconstrained MLPs on symmetric functions while needing less data and generalizing better.',
+    domains: ['ML Theory', 'Architecture Design'],
+    paperUrl: 'https://arxiv.org/abs/2602.20370',
+  },
+];
+
+export const skills = [
+  { category: 'ML & Deep Learning', items: ['PyTorch', 'PyTorch Geometric', 'CUDA', 'Graph Neural Networks', 'Equivariant Networks', 'Spectral Methods'] },
+  { category: 'Languages & Tools', items: ['Python', 'Git', 'Linux', 'LaTeX'] },
+  { category: 'Research Domains', items: ['Group Theory', 'Spectral Theory', 'Approximation Theory', 'Geometric Deep Learning'] },
 ];
