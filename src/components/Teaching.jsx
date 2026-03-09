@@ -2,7 +2,7 @@ import { teaching } from '../data'
 
 export default function Teaching() {
   return (
-    <section id="teaching">
+    <section id="teaching" className="section-card">
       <h2>Teaching</h2>
       {teaching.map((item, i) => (
         <div key={i} className="teaching-item">

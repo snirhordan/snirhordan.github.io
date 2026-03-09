@@ -2,7 +2,7 @@ import { codeProjects } from '../data'
 
 export default function Code() {
   return (
-    <section id="code">
+    <section id="code" className="section-card">
       <h2>Code</h2>
       <div className="code-grid">
         {codeProjects.map((project) => (
@@ -12,9 +12,11 @@ export default function Code() {
               {project.highlight && <span className="code-highlight">{project.highlight}</span>}
             </div>
             <p>{project.description}</p>
-            {project.tags.map((tag) => (
-              <span key={tag} className="code-tag">{tag}</span>
-            ))}
+            <div className="code-tags">
+              {project.tags.map((tag) => (
+                <span key={tag} className="code-tag">{tag}</span>
+              ))}
+            </div>
           </a>
         ))}
       </div>

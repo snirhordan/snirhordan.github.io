@@ -20,14 +20,14 @@ export default function App() {
       <main role="main">
         <About />
         <News />
-        <Skills />
+        <Publications />
         <Insights />
         <Awards />
-        <Publications />
-        <Talks />
         <Code />
-        <Collaborators />
+        <Talks />
         <Teaching />
+        <Skills />
+        <Collaborators />
       </main>
       <Footer />
     </>

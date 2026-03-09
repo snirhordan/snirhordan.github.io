@@ -38,6 +38,7 @@ export default function PublicationCard({ pub }) {
           <button
             className="pub-btn abstract-toggle"
             onClick={() => setAbstractOpen(!abstractOpen)}
+            aria-expanded={abstractOpen}
           >
             {abstractOpen ? 'Close' : 'Abstract'}
           </button>

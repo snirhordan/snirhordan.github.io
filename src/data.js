@@ -20,9 +20,8 @@ export const siteData = {
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'News', href: '#news' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Insights', href: '#insights' },
   { label: 'Publications', href: '#publications' },
+  { label: 'Awards', href: '#awards' },
   { label: 'Code', href: '#code' },
   { label: 'Talks', href: '#talks' },
   { label: 'CV', href: 'snir_hordan_cv.pdf' },
@@ -130,7 +129,6 @@ export const publications = [
     links: [
       { label: 'arXiv', url: 'https://arxiv.org/abs/2506.05530' },
       { label: 'Code (equiEPNN)', url: 'https://github.com/IntelliFinder/equiEPNN' },
-      { label: 'Code (channels_epnn)', url: 'https://github.com/IntelliFinder/channels_epnn' },
     ],
   },
   {
@@ -199,13 +197,6 @@ export const codeProjects = [
     highlight: 'ICML 2024',
     tags: ['Python', 'PyTorch Geometric'],
   },
-  {
-    name: 'channels_epnn',
-    url: 'https://github.com/IntelliFinder/channels_epnn',
-    description: 'Channel-based spectral GNN for molecular property prediction with improved expressiveness over standard spectral methods.',
-    highlight: 'NeurIPS 2025',
-    tags: ['Python', 'PyTorch'],
-  },
 ];
 
 export const collaborators = [
@@ -230,19 +221,19 @@ export const teaching = [
 export const insights = [
   {
     title: 'Why Your GNN Fails on Symmetric Molecules',
-    summary: 'Spectral graph neural networks are a go-to tool for molecular property prediction, but we proved they have a fundamental blind spot: they cannot distinguish certain graphs even when the spectrum is unique. We built a fix that restores full expressiveness without blowing up compute.',
-    domains: ['Drug Discovery', 'Materials Science'],
+    summary: 'Spectral features like Laplacian eigenvectors are widely used to boost GNN expressiveness, but we proved that spectral GNN architectures still cannot distinguish certain non-isomorphic graphs — even when the spectrum has no repeated eigenvalues. We propose a provably more expressive spectral architecture based on rotation-equivariant networks.',
+    domains: ['Graph Learning', 'GNN Design'],
     paperUrl: 'https://arxiv.org/abs/2506.05530',
   },
   {
     title: 'Processing 3D Point Clouds Without Exponential Blowup',
-    summary: 'Complete 3D point cloud networks existed before, but required exponential time — impractical for real molecules. We developed the first polynomial-time universal architecture and hit state-of-the-art on molecular conformation generation.',
-    domains: ['Molecular Simulation', '3D Vision', 'Robotics'],
+    summary: 'Prior complete 3D point cloud networks required exponential time, making them impractical for real-world molecules. We constructed the first universal equivariant architecture with polynomial complexity, achieving state-of-the-art results on molecular conformation generation and N-body dynamics.',
+    domains: ['Molecular Simulation', '3D Vision', 'Physics Simulation'],
     paperUrl: 'https://arxiv.org/abs/2402.02484',
   },
   {
     title: 'Hard-Coding Symmetry Doesn\'t Cost You Expressiveness',
-    summary: 'A common worry: do equivariant architectures sacrifice approximation power by constraining the model? We proved they don\'t — equivariant networks match unconstrained MLPs on symmetric functions while needing less data and generalizing better.',
+    summary: 'A common concern is that hard-coding symmetry constraints might limit what a network can learn. We proved this is not the case: for several prominent equivariant architectures — including Deep Sets, Transformers, and frame-averaging models — equivariant networks match the approximation rates of equally-sized unconstrained MLPs on symmetric functions.',
     domains: ['ML Theory', 'Architecture Design'],
     paperUrl: 'https://arxiv.org/abs/2602.20370',
   },

@@ -5,7 +5,7 @@ export default function News() {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <section id="news">
+    <section id="news" className="section-card">
       <h2>News</h2>
       <ul className="news-list">
         {newsItems.map((item, i) => (
@@ -21,6 +21,7 @@ export default function News() {
       <button
         className="show-more-btn"
         onClick={() => setExpanded(!expanded)}
+        aria-expanded={expanded}
       >
         {expanded ? 'Show less' : 'Show more'}
       </button>

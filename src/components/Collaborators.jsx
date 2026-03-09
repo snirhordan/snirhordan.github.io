@@ -2,7 +2,7 @@ import { collaborators } from '../data'
 
 export default function Collaborators() {
   return (
-    <section id="collaborators">
+    <section id="collaborators" className="section-card">
       <h2>Collaborators</h2>
       <ul className="collaborators-list">
         {collaborators.map((person) => (
