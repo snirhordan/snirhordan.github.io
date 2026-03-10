@@ -253,10 +253,10 @@ h2 {
 }
 
 /* News show-more toggle */
-.news-hidden {
+.news-list li.news-hidden {
   display: none;
 }
-.news-hidden.news-visible {
+.news-list li.news-hidden.news-visible {
   display: flex;
 }
 

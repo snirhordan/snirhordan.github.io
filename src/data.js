@@ -21,6 +21,7 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'News', href: '#news' },
   { label: 'Publications', href: '#publications' },
+  { label: 'Insights', href: '#insights' },
   { label: 'Awards', href: '#awards' },
   { label: 'Code', href: '#code' },
   { label: 'Talks', href: '#talks' },
