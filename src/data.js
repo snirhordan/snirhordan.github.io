@@ -222,7 +222,7 @@ export const teaching = [
 export const insights = [
   {
     title: 'Why Your GNN Fails on Symmetric Molecules',
-    summary: 'Many GNNs boost expressiveness using spectral features like Laplacian eigenvectors. We proved these Spectral GNNs still fail to distinguish certain non-isomorphic graphs — even when all eigenvalues are distinct. The core issue: eigenvector sign ambiguities create blind spots that popular architectures like EPNN, Graphormer-GD, and random-walk GNNs cannot resolve. Our fix, equiEPNN, treats sign flips as rotations and applies equivariant updates that eliminate the ambiguity, achieving 0% uncanonicalizable eigenvectors on ZINC (down from 11%).',
+    summary: 'Many GNNs boost expressiveness using spectral features like Laplacian eigenvectors. We proved these Spectral GNNs still fail to distinguish certain non-isomorphic graphs — even when all eigenvalues are distinct. The core issue: eigenspaces have sign symmetries, and architectures like EPNN, Graphormer-GD, and random-walk GNNs lack a mechanism to break them, limiting their expressiveness. Our fix, equiEPNN, treats sign flips as rotations and applies equivariant updates that break these eigenspace symmetries, achieving 0% uncanonicalizable eigenvectors on ZINC (down from 11%).',
     domains: ['Graph Learning', 'GNN Design'],
     paperUrl: 'https://arxiv.org/abs/2506.05530',
   },
