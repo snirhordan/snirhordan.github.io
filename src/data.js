@@ -229,7 +229,7 @@ export const insights = [
   {
     title: 'Processing 3D Point Clouds Without Exponential Blowup',
     summary: 'A 3D point cloud is determined up to symmetry by its pairwise distances, and the 2-WL test on these distances is provably complete. But prior networks that simulated 2-WL required feature dimensions that grew exponentially with depth. We proved that a shallow PPGN (5 iterations) with polynomial-size features suffices for universal equivariant approximation. The resulting architecture, WeLNet, achieves state-of-the-art on GEOM-QM9 molecular conformation (0.16 \u00c5, 15% better than UniMol) and N-body dynamics (MSE 0.0036).',
-    domains: ['Molecular Simulation', 'Physics Simulation'],
+    domains: ['Molecular Simulation'],
     paperUrl: 'https://arxiv.org/abs/2402.02484',
   },
   {
@@ -242,6 +242,6 @@ export const insights = [
 
 export const skills = [
   { category: 'ML & Deep Learning', items: ['PyTorch', 'PyTorch Geometric', 'CUDA', 'Graph Neural Networks', 'Equivariant Networks', 'Spectral Methods'] },
-  { category: 'Languages & Tools', items: ['Python', 'Git', 'Linux', 'LaTeX'] },
+  { category: 'Languages & Tools', items: ['Python', 'C++', 'Git', 'Linux', 'LaTeX'] },
   { category: 'Research Domains', items: ['Group Theory', 'Spectral Theory', 'Approximation Theory', 'Geometric Deep Learning'] },
 ];
