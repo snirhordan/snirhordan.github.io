@@ -16,13 +16,14 @@ export default function PublicationCard({ pub }) {
   })
 
   return (
-    <div className="pub-card">
+    <div className={'pub-card' + (pub.featured ? ' pub-featured' : '')}>
       {pub.image && (
         <div className="pub-thumb">
           <img src={pub.image} alt={pub.imageAlt} />
         </div>
       )}
       <div className="pub-details">
+        {pub.featured && <span className="pub-featured-badge">Featured</span>}
         <h3 className="pub-title">
           <a href={pub.titleUrl}>{pub.title}</a>
         </h3>
@@ -35,6 +36,9 @@ export default function PublicationCard({ pub }) {
           {pub.links.map((link) => (
             <a key={link.label} href={link.url} className="pub-btn">{link.label}</a>
           ))}
+          {pub.videoUrl && (
+            <a href={pub.videoUrl} className="pub-btn pub-btn-video">Video</a>
+          )}
           <button
             className="pub-btn abstract-toggle"
             onClick={() => setAbstractOpen(!abstractOpen)}

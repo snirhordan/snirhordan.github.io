@@ -3,8 +3,8 @@ import { insights } from '../data'
 export default function Insights() {
   return (
     <section id="insights" className="section-card">
-      <h2>Insights</h2>
-      <p className="insights-subtitle">Research explained for practitioners — what we built, why it matters, and where it applies.</p>
+      <h2>Research Insights</h2>
+      <p className="insights-subtitle">What we built, why it matters, and where it applies.</p>
       <div className="insights-grid">
         {insights.map((post) => (
           <a key={post.title} href={post.paperUrl} className="insight-card">
