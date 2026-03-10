@@ -222,20 +222,20 @@ export const teaching = [
 export const insights = [
   {
     title: 'Why Your GNN Fails on Symmetric Molecules',
-    summary: 'Spectral features like Laplacian eigenvectors are widely used to boost GNN expressiveness, but we proved that spectral GNN architectures still cannot distinguish certain non-isomorphic graphs — even when the spectrum has no repeated eigenvalues. We propose a provably more expressive spectral architecture based on rotation-equivariant networks.',
+    summary: 'Many GNNs boost expressiveness using spectral features like Laplacian eigenvectors. We proved these Spectral GNNs still fail to distinguish certain non-isomorphic graphs — even when all eigenvalues are distinct. The core issue: eigenvector sign ambiguities create blind spots that popular architectures like EPNN, Graphormer-GD, and random-walk GNNs cannot resolve. Our fix, equiEPNN, treats sign flips as rotations and applies equivariant updates that eliminate the ambiguity, achieving 0% uncanonicalizable eigenvectors on ZINC (down from 11%).',
     domains: ['Graph Learning', 'GNN Design'],
     paperUrl: 'https://arxiv.org/abs/2506.05530',
   },
   {
     title: 'Processing 3D Point Clouds Without Exponential Blowup',
-    summary: 'Prior complete 3D point cloud networks required exponential time, making them impractical for real-world molecules. We constructed the first universal equivariant architecture with polynomial complexity, achieving state-of-the-art results on molecular conformation generation and N-body dynamics.',
-    domains: ['Molecular Simulation', '3D Vision', 'Physics Simulation'],
+    summary: 'A 3D point cloud is determined up to symmetry by its pairwise distances, and the 2-WL test on these distances is provably complete. But prior networks that simulated 2-WL required feature dimensions that grew exponentially with depth. We proved that a shallow PPGN (5 iterations) with polynomial-size features suffices for universal equivariant approximation. The resulting architecture, WeLNet, achieves state-of-the-art on GEOM-QM9 molecular conformation (0.16 \u00c5, 15% better than UniMol) and N-body dynamics (MSE 0.0036).',
+    domains: ['Molecular Simulation', 'Physics Simulation'],
     paperUrl: 'https://arxiv.org/abs/2402.02484',
   },
   {
     title: 'Hard-Coding Symmetry Doesn\'t Cost You Expressiveness',
-    summary: 'A common concern is that hard-coding symmetry constraints might limit what a network can learn. We proved this is not the case: for several prominent equivariant architectures — including Deep Sets, Transformers, and frame-averaging models — equivariant networks match the approximation rates of equally-sized unconstrained MLPs on symmetric functions.',
-    domains: ['ML Theory', 'Architecture Design'],
+    summary: 'Does constraining a network to respect symmetries reduce what it can approximate? We derived quantitative approximation rates showing it does not. For Deep Sets, Transformers, and frame-averaging models on \u03b1-H\u00f6lder functions, equivariant architectures match the rates of equally-sized unconstrained ReLU MLPs. This is the first result giving concrete convergence rates — not just universal approximation — for equivariant models, confirming that symmetry constraints are essentially free in terms of expressiveness.',
+    domains: ['ML Theory', 'Approximation Theory'],
     paperUrl: 'https://arxiv.org/abs/2602.20370',
   },
 ];
