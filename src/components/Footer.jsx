@@ -12,7 +12,7 @@ export default function Footer() {
           <a href={links.github}>GitHub</a>
           <a href={links.linkedin}>LinkedIn</a>
         </div>
-        <p className="footer-copy">&copy; 2026 Snir Hordan &middot; Last updated March 2026</p>
+        <p className="footer-copy">&copy; 2026 Snir Hordan &middot; Last updated June 2026</p>
       </div>
     </footer>
   )
