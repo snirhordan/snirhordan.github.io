@@ -101,7 +101,7 @@ export const publications = [
     authors: [
       { name: 'S Hordan', bold: true },
       { name: 'N Dym', url: 'https://nadavdym.github.io/' },
-      { name: 'T Seppelt' },
+      { name: 'T Seppelt', url: 'https://tseppelt.github.io/' },
     ],
     venue: 'arXiv preprint',
     venueShort: 'arXiv',
@@ -253,7 +253,7 @@ export const collaborators = [
   { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
   { name: 'Gur Lifshitz', url: 'https://www.semanticscholar.org/author/2052395556' },
   { name: 'Yonatan Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
-  { name: 'Tim Seppelt' },
+  { name: 'Tim Seppelt', url: 'https://tseppelt.github.io/' },
   { name: 'Benjamin Friedman' },
 ];
 
