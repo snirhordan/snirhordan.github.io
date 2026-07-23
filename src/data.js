@@ -30,6 +30,10 @@ export const navLinks = [
 
 export const newsItems = [
   {
+    date: 'July 2026',
+    content: 'Mentored a student team at the <strong><a href="https://www.logml.ai/">London Geometry and Machine Learning Summer School (LogML 2026)</a></strong>, leading a project on canonicalizing symmetric molecular point clouds.',
+  },
+  {
     date: 'May 2026',
     content: 'New preprint: <strong><a href="https://arxiv.org/abs/2605.23446">PRiSM</a></strong>, the first provably complete canonicalization for simple-spectrum graphs, resolving the open problem of complete expressivity for spectral GNNs.',
   },
