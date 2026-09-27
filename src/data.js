@@ -1,7 +1,6 @@
 export const siteData = {
   name: 'Snir Hordan',
   title: 'PhD Candidate, Applied Mathematics',
-  tagline: 'Building provably complete and efficient neural networks for geometric data.',
   bio: 'I research machine learning models that process geometric data such as graphs and point clouds. My work focuses on identifying fundamental limitations of geometric models and developing provably complete architectures with moderate computational cost. These methods have direct applications in drug discovery, molecular simulation, and 3D computer vision.',
   affiliation: {
     university: { name: 'Technion, Israel Institute of Technology', url: 'https://www.technion.ac.il/' },
@@ -41,7 +40,7 @@ export const newsItems = [
   },
   {
     date: '2026',
-    content: 'Received the <strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (6 out of all graduate students, Technion).',
+    content: 'Received the <strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (one of six recipients among all Technion graduate students).',
   },
   {
     date: 'Jan 2026',
@@ -79,7 +78,7 @@ export const newsItems = [
 export const awards = [
   {
     year: '2026',
-    text: '<strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (6 out of all graduate students, Technion).',
+    text: '<strong><a href="https://graduate.technion.ac.il/en/pictures/">Jacobs Prize for Excellent Publication</a></strong> (one of six recipients among all Technion graduate students).',
   },
   {
     year: '2025',
@@ -105,9 +104,9 @@ export const publications = [
     title: 'Weisfeiler-Leman Is Incomplete on Simple Spectrum Graphs, so Canonicalize Them',
     titleUrl: 'https://arxiv.org/abs/2605.23446',
     authors: [
-      { name: 'S Hordan', bold: true },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
-      { name: 'T Seppelt', url: 'https://tseppelt.github.io/' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Tim Seppelt', url: 'https://tseppelt.github.io/' },
     ],
     venue: 'Conference on Neural Information Processing Systems',
     venueShort: 'NeurIPS',
@@ -125,10 +124,10 @@ export const publications = [
     title: 'When and How to Canonize: A Generalization Perspective',
     titleUrl: 'https://arxiv.org/abs/2605.11008',
     authors: [
-      { name: 'Y Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
-      { name: 'B Friedman' },
-      { name: 'S Hordan', bold: true },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Yonatan Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
+      { name: 'Benjamin Friedman' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
     venue: 'Conference on Neural Information Processing Systems',
     venueShort: 'NeurIPS',
@@ -145,11 +144,11 @@ export const publications = [
     title: 'Quantitative Approximation Rates for Group Equivariant Learning',
     titleUrl: 'https://arxiv.org/abs/2602.20370',
     authors: [
-      { name: 'JW Siegel', url: 'https://jwsiegel2510.github.io/' },
-      { name: 'S Hordan', bold: true },
-      { name: 'H Lawrence', url: 'https://hannahlawrence.github.io/' },
-      { name: 'A Syed' },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Jonathan W. Siegel', url: 'https://jwsiegel2510.github.io/' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Hannah Lawrence', url: 'https://hannahlawrence.github.io/' },
+      { name: 'Ali Syed' },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
     venue: 'arXiv preprint',
     venueShort: 'arXiv',
@@ -165,10 +164,10 @@ export const publications = [
     title: 'Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum',
     titleUrl: 'https://arxiv.org/abs/2506.05530',
     authors: [
-      { name: 'S Hordan', bold: true },
-      { name: 'M Bechler-Speicher', url: 'https://scholar.google.com/citations?user=5Fj_AUoAAAAJ&hl=en' },
-      { name: 'G Lifshitz' },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Maya Bechler-Speicher', url: 'https://scholar.google.com/citations?user=5Fj_AUoAAAAJ&hl=en' },
+      { name: 'Gur Lifshitz' },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
     venue: 'Conference on Neural Information Processing Systems',
     venueShort: 'NeurIPS',
@@ -188,20 +187,19 @@ export const publications = [
     title: 'Weisfeiler Leman for Euclidean Equivariant Machine Learning',
     titleUrl: 'https://arxiv.org/abs/2402.02484',
     authors: [
-      { name: 'S Hordan', bold: true },
-      { name: 'T Amir', url: 'https://tal-amir.github.io/' },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Tal Amir', url: 'https://tal-amir.github.io/' },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
     venue: 'International Conference on Machine Learning',
     venueShort: 'ICML',
     year: 2024,
     image: 'projects/wl-euclidean/rep.png',
     imageAlt: 'WL for Euclidean equivariant ML',
-    abstract: 'We construct the first universal and equivariant 3D point cloud network with polynomial complexity, solving a key open problem in the field. We achieve state-of-the-art results on molecular conformation generation benchmarks.',
+    abstract: 'We construct a universal, equivariant 3D point cloud network with polynomial complexity, and show that a shallow 2-WL-based architecture (WeLNet) with polynomial-size features suffices. WeLNet achieves state-of-the-art results on molecular conformation generation and N-body dynamics benchmarks.',
     links: [
       { label: 'arXiv', url: 'https://arxiv.org/abs/2402.02484' },
       { label: 'Code', url: 'https://github.com/IntelliFinder/welnet' },
-      { label: 'ICML 2024', url: 'https://icml.cc/Conferences/2024' },
     ],
   },
   {
@@ -209,20 +207,19 @@ export const publications = [
     title: 'Complete Neural Networks for Euclidean Graphs',
     titleUrl: 'https://arxiv.org/abs/2301.13821',
     authors: [
-      { name: 'S Hordan', bold: true },
-      { name: 'T Amir', url: 'https://tal-amir.github.io/' },
-      { name: 'SJ Gortler', url: 'https://www.eecs.harvard.edu/~sjg/' },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+      { name: 'Snir Hordan', bold: true },
+      { name: 'Tal Amir', url: 'https://tal-amir.github.io/' },
+      { name: 'Steven J. Gortler', url: 'https://www.eecs.harvard.edu/~sjg/' },
+      { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
     venue: 'AAAI Conference on Artificial Intelligence',
     venueShort: 'AAAI',
     year: 2024,
     image: 'projects/complete-nn/rep.png',
     imageAlt: 'Complete neural networks for Euclidean graphs',
-    abstract: 'We construct a universal invariant 3D point cloud network with polynomial time complexity. The architecture is provably complete for Euclidean graphs, developed in collaboration with Harvard University.',
+    abstract: 'We construct a universal invariant 3D point cloud network with polynomial time complexity, and prove that the architecture is complete for Euclidean graphs.',
     links: [
       { label: 'arXiv', url: 'https://arxiv.org/abs/2301.13821' },
-      { label: 'AAAI 2024', url: 'https://aaai-24.aaai.org/' },
     ],
   },
 ];
@@ -238,14 +235,14 @@ export const codeProjects = [
   {
     name: 'equiEPNN',
     url: 'https://github.com/IntelliFinder/equiEPNN',
-    description: 'Equivariant spectral GNN for molecular property prediction. Fixes fundamental expressiveness limitations of standard spectral architectures.',
+    description: 'Equivariant spectral GNN that addresses the expressivity limitations of standard spectral architectures on graphs with a simple spectrum.',
     highlight: 'NeurIPS 2025 Spotlight',
     tags: ['Python', 'PyTorch', 'CUDA'],
   },
   {
     name: 'welnet',
     url: 'https://github.com/IntelliFinder/welnet',
-    description: 'Universal equivariant 3D point cloud network with polynomial complexity. Achieves SOTA on molecular conformation generation (GEOM-QM9).',
+    description: 'Universal equivariant 3D point cloud network with polynomial complexity; state-of-the-art results on molecular conformation generation (GEOM-QM9).',
     highlight: 'ICML 2024',
     tags: ['Python', 'PyTorch Geometric'],
   },
@@ -275,27 +272,18 @@ export const teaching = [
 
 export const insights = [
   {
-    title: 'Why Your GNN Fails on Symmetric Molecules',
-    summary: 'Many GNNs boost expressiveness using spectral features like Laplacian eigenvectors. We proved these Spectral GNNs still fail to distinguish certain non-isomorphic graphs — even when all eigenvalues are distinct. The core issue: eigenspaces have sign symmetries, and architectures like EPNN, Graphormer-GD, and random-walk GNNs lack a mechanism to break them, limiting their expressiveness. Our fix, equiEPNN, treats sign flips as rotations and applies equivariant updates that break these eigenspace symmetries, achieving 0% uncanonicalizable eigenvectors on ZINC (down from 11%).',
-    domains: ['Graph Learning', 'GNN Design'],
+    title: 'Spectral GNNs are incomplete on graphs with a simple spectrum',
+    summary: 'Many GNNs increase their expressive power with spectral features such as Laplacian eigenvectors. We prove that these spectral GNNs still fail to distinguish some non-isomorphic graphs, even when all eigenvalues are distinct. The obstruction is the sign ambiguity of eigenvectors: architectures such as EPNN, Graphormer-GD, and random-walk GNNs have no mechanism to resolve it. Our architecture, equiEPNN, treats sign flips as rotations and applies equivariant updates that break these symmetries, reducing the fraction of uncanonicalizable eigenvectors on ZINC from 11% to 0%.',
     paperUrl: 'https://arxiv.org/abs/2506.05530',
   },
   {
-    title: 'Processing 3D Point Clouds Without Exponential Blowup',
-    summary: 'A 3D point cloud is determined up to symmetry by its pairwise distances, and the 2-WL test on these distances is provably complete. But prior networks that simulated 2-WL required feature dimensions that grew exponentially with depth. We proved that a shallow PPGN (5 iterations) with polynomial-size features suffices for universal equivariant approximation. The resulting architecture, WeLNet, achieves state-of-the-art on GEOM-QM9 molecular conformation (0.16 \u00c5, 15% better than UniMol) and N-body dynamics (MSE 0.0036).',
-    domains: ['Molecular Simulation'],
+    title: 'Complete point cloud networks with polynomial-size features',
+    summary: 'A 3D point cloud is determined up to symmetry by its pairwise distances, and the 2-WL test applied to these distances is complete. Prior networks that simulate 2-WL required feature dimensions growing exponentially with depth. We prove that a shallow PPGN (five iterations) with polynomial-size features suffices for universal equivariant approximation. The resulting architecture, WeLNet, achieves state-of-the-art results on GEOM-QM9 molecular conformation generation (0.16 \u00c5, 15% lower error than UniMol) and N-body dynamics (MSE 0.0036).',
     paperUrl: 'https://arxiv.org/abs/2402.02484',
   },
   {
-    title: 'Hard-Coding Symmetry Doesn\'t Cost You Expressiveness',
-    summary: 'Does constraining a network to respect symmetries reduce what it can approximate? We derived quantitative approximation rates showing it does not. For Deep Sets, Transformers, and frame-averaging models on \u03b1-H\u00f6lder functions, equivariant architectures match the rates of equally-sized unconstrained ReLU MLPs. This is the first result giving concrete convergence rates — not just universal approximation — for equivariant models, confirming that symmetry constraints are essentially free in terms of expressiveness.',
-    domains: ['ML Theory', 'Approximation Theory'],
+    title: 'Approximation rates for equivariant architectures',
+    summary: 'Does constraining a network to respect symmetries reduce what it can approximate? We derive quantitative approximation rates for \u03b1-H\u00f6lder functions and show that Deep Sets, Transformers, and frame-averaging models match the rates of equally sized unconstrained ReLU MLPs. Beyond universality, these are among the few quantitative approximation results for equivariant models, and they show that building in symmetry does not cost approximation power.',
     paperUrl: 'https://arxiv.org/abs/2602.20370',
   },
-];
-
-export const skills = [
-  { category: 'ML & Deep Learning', items: ['PyTorch', 'PyTorch Geometric', 'CUDA', 'Graph Neural Networks', 'Equivariant Networks', 'Spectral Methods'] },
-  { category: 'Languages & Tools', items: ['Python', 'C++', 'Git', 'Linux', 'LaTeX'] },
-  { category: 'Research Domains', items: ['Group Theory', 'Spectral Theory', 'Approximation Theory', 'Geometric Deep Learning'] },
 ];
