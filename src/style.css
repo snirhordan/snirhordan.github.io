@@ -326,15 +326,7 @@ h3 {
   font-weight: 600;
 }
 
-/* ===== Skills & collaborators ===== */
-.skills-list { display: grid; gap: 6px; }
-.skills-list div {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 16px;
-}
-.skills-list dt { color: var(--muted); font-size: 0.95rem; }
-.skills-list dd { color: var(--text-2); }
+/* ===== Collaborators ===== */
 
 .inline-list {
   color: var(--text-2);
@@ -371,7 +363,6 @@ footer {
   .about-text h1 { font-size: 1.8rem; }
 
   .dated-list li { grid-template-columns: 1fr; gap: 0; padding: 8px 0; }
-  .skills-list div { grid-template-columns: 1fr; gap: 0; }
   .pub--featured { padding: 14px; }
   .entry-head { flex-direction: column; gap: 0; }
 }
