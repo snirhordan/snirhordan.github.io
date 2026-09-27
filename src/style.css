@@ -289,8 +289,7 @@ h3 {
   list-style: disc;
   padding-left: 1.2em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 32px;
+  gap: 4px;
   color: var(--text-2);
 }
 .interests-list li::marker { color: var(--muted); }
@@ -372,7 +371,6 @@ footer {
   .dated-list li { grid-template-columns: 1fr; gap: 0; padding: 8px 0; }
   .pub--featured { padding: 14px; }
   .entry-head { flex-direction: column; gap: 0; }
-  .interests-list { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
