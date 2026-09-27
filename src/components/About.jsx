@@ -22,6 +22,11 @@ export default function About() {
               {nextPosition.role}, <a href={nextPosition.institution.url}>{nextPosition.institution.name}</a>
             </p>
           )}
+          {nextPosition?.department && (
+            <p className="about-affiliation">
+              {nextPosition.department.name} &middot; Hosted by <a href={nextPosition.host.url}>{nextPosition.host.name}</a>
+            </p>
+          )}
           <p className="about-bio">{bio}</p>
           <nav className="about-links" aria-label="Contact and profiles">
             <a href={links.email}>Email</a>
