@@ -280,10 +280,7 @@ export const teaching = [
 ];
 
 export const researchInterests = [
-  'Geometric deep learning',
-  'Expressive power of graph neural networks and the Weisfeiler-Leman hierarchy',
-  'Spectral methods and canonicalization for graphs',
-  'Equivariant and invariant neural networks',
-  'Approximation theory for symmetry-constrained models',
-  'Machine learning for molecules and 3D point clouds',
+  'Geometric deep learning for biological applications',
+  'Deep learning on point clouds and graphs',
+  'Generative modeling on structured data',
 ];
