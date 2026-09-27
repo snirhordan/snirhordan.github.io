@@ -10,6 +10,8 @@ export const siteData = {
   nextPosition: {
     role: 'Incoming Postdoctoral Researcher',
     institution: { name: 'University of Oxford', url: 'https://www.ox.ac.uk/' },
+    department: { name: 'Department of Computer Science', url: 'https://www.cs.ox.ac.uk/' },
+    host: { name: 'Prof. Michael Bronstein', url: 'https://www.cs.ox.ac.uk/people/michael.bronstein/' },
   },
   links: {
     email: 'mailto:snirhordan@campus.technion.ac.il',
@@ -30,6 +32,10 @@ export const navLinks = [
 ];
 
 export const newsItems = [
+  {
+    date: 'Sep 2026',
+    content: 'Will join the <strong><a href="https://www.cs.ox.ac.uk/">Department of Computer Science, University of Oxford</a></strong> as a postdoctoral researcher with <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Prof. Michael Bronstein</a>.',
+  },
   {
     date: 'Sep 2026',
     content: 'Two papers accepted at <strong>NeurIPS 2026</strong>: <strong><a href="https://arxiv.org/abs/2605.23446">PRiSM</a></strong> (Weisfeiler-Leman is incomplete on simple-spectrum graphs) as a <span class="spotlight">Spotlight (top 5.1% of accepted papers)</span>, and <strong><a href="https://arxiv.org/abs/2605.11008">When and How to Canonize</a></strong>.',
