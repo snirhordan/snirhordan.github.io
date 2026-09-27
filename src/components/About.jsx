@@ -14,9 +14,6 @@ export default function About() {
           <p className="about-title">
             {title}, <a href={affiliation.university.url}>{affiliation.university.name}</a>
           </p>
-          <p className="about-affiliation">
-            {affiliation.faculty} &middot; Advised by <a href={affiliation.supervisor.url}>{affiliation.supervisor.name}</a>
-          </p>
           {nextPosition && (
             <p className="about-title about-next">
               {nextPosition.role}, <a href={nextPosition.institution.url}>{nextPosition.institution.name}</a>
@@ -27,7 +24,10 @@ export default function About() {
               {nextPosition.department.name} &middot; Hosted by <a href={nextPosition.host.url}>{nextPosition.host.name}</a>
             </p>
           )}
-          <p className="about-bio">{bio}</p>
+          <p className="about-bio">
+            I am a PhD candidate in the {affiliation.faculty} at the Technion, advised
+            by <a href={affiliation.supervisor.url}>{affiliation.supervisor.name}</a>. {bio}
+          </p>
           <nav className="about-links" aria-label="Contact and profiles">
             <a href={links.email}>Email</a>
             <a href={links.scholar}>Google Scholar</a>
