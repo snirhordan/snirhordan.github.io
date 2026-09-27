@@ -31,7 +31,7 @@ export const navLinks = [
 export const newsItems = [
   {
     date: 'Sep 2026',
-    content: 'Two papers accepted at <strong>NeurIPS 2026</strong>: <strong><a href="https://arxiv.org/abs/2605.23446">PRiSM</a></strong> (Weisfeiler-Leman is incomplete on simple-spectrum graphs) as a <span class="spotlight">Spotlight (top 1.3%)</span>, and <strong><a href="https://arxiv.org/abs/2605.11008">When and How to Canonize</a></strong>.',
+    content: 'Two papers accepted at <strong>NeurIPS 2026</strong>: <strong><a href="https://arxiv.org/abs/2605.23446">PRiSM</a></strong> (Weisfeiler-Leman is incomplete on simple-spectrum graphs) as a <span class="spotlight">Spotlight (top 5.1% of accepted papers)</span>, and <strong><a href="https://arxiv.org/abs/2605.11008">When and How to Canonize</a></strong>.',
   },
   {
     date: 'July 2026',
@@ -55,7 +55,7 @@ export const newsItems = [
   },
   {
     date: '2025',
-    content: 'Our paper on spectral GNNs accepted at <strong>NeurIPS 2025</strong> as a <span class="spotlight">Spotlight (top 3%)</span>.',
+    content: 'Our paper on spectral GNNs accepted at <strong>NeurIPS 2025</strong> as a <span class="spotlight">Spotlight (top 14.5% of accepted papers)</span>.',
   },
   {
     date: '2025',
@@ -114,7 +114,8 @@ export const publications = [
     venue: 'Conference on Neural Information Processing Systems',
     venueShort: 'NeurIPS',
     year: 2026,
-    spotlight: 'Spotlight, top 1.3%',
+    featured: true,
+    spotlight: 'Spotlight, top 5.1% of accepted papers',
     image: null,
     abstract: 'Graphs with a simple spectrum admit cubic-time isomorphism testing, yet we prove that for every k, the k-Weisfeiler-Leman (k-WL) test cannot distinguish all non-isomorphic graphs with a simple spectrum. Since the WL hierarchy upper-bounds the distinguishing power of GNNs, this incompleteness rules out completeness for every k-WL-aligned GNN family. To close this gap, we introduce PRiSM (Partition, Refine, Solve, Match), the first provably complete canonicalization of simple-spectrum eigendecompositions. Composed with DeepSets or a Transformer, PRiSM achieves universal approximation on simple-spectrum graphs — justifying canonicalized Laplacian positional encodings — and matches or outperforms existing spectral canonicalizations on graph regression, classification, and expressivity benchmarks.',
     links: [
@@ -174,8 +175,7 @@ export const publications = [
     venue: 'Conference on Neural Information Processing Systems',
     venueShort: 'NeurIPS',
     year: 2025,
-    featured: true,
-    spotlight: 'Spotlight, top 3%',
+    spotlight: 'Spotlight, top 14.5% of accepted papers',
     image: 'projects/spectral-gnn/rep.png',
     imageAlt: 'Spectral GNN illustration',
     abstract: 'We prove that spectral graph neural networks are incomplete on graphs with a simple spectrum, establishing fundamental expressiveness limitations of spectral GNN architectures. We further propose a novel spectral GNN architecture that overcomes these limitations.',
