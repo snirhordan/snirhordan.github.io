@@ -25,7 +25,6 @@ export const siteData = {
 export const navLinks = [
   { label: 'News', href: '#news' },
   { label: 'Publications', href: '#publications' },
-  { label: 'Research', href: '#research' },
   { label: 'Awards', href: '#awards' },
   { label: 'Talks', href: '#talks' },
   { label: 'CV', href: 'snir_hordan_cv.pdf' },
@@ -280,20 +279,11 @@ export const teaching = [
   },
 ];
 
-export const insights = [
-  {
-    title: 'Spectral GNNs are incomplete on graphs with a simple spectrum',
-    summary: 'Many GNNs increase their expressive power with spectral features such as Laplacian eigenvectors. We prove that these spectral GNNs still fail to distinguish some non-isomorphic graphs, even when all eigenvalues are distinct. The obstruction is the sign ambiguity of eigenvectors: architectures such as EPNN, Graphormer-GD, and random-walk GNNs have no mechanism to resolve it. Our architecture, equiEPNN, treats sign flips as rotations and applies equivariant updates that break these symmetries, reducing the fraction of uncanonicalizable eigenvectors on ZINC from 11% to 0%.',
-    paperUrl: 'https://arxiv.org/abs/2506.05530',
-  },
-  {
-    title: 'Complete point cloud networks with polynomial-size features',
-    summary: 'A 3D point cloud is determined up to symmetry by its pairwise distances, and the 2-WL test applied to these distances is complete. Prior networks that simulate 2-WL required feature dimensions growing exponentially with depth. We prove that a shallow PPGN (five iterations) with polynomial-size features suffices for universal equivariant approximation. The resulting architecture, WeLNet, achieves state-of-the-art results on GEOM-QM9 molecular conformation generation (0.16 \u00c5, 15% lower error than UniMol) and N-body dynamics (MSE 0.0036).',
-    paperUrl: 'https://arxiv.org/abs/2402.02484',
-  },
-  {
-    title: 'Approximation rates for equivariant architectures',
-    summary: 'Does constraining a network to respect symmetries reduce what it can approximate? We derive quantitative approximation rates for \u03b1-H\u00f6lder functions and show that Deep Sets, Transformers, and frame-averaging models match the rates of equally sized unconstrained ReLU MLPs. Beyond universality, these are among the few quantitative approximation results for equivariant models, and they show that building in symmetry does not cost approximation power.',
-    paperUrl: 'https://arxiv.org/abs/2602.20370',
-  },
+export const researchInterests = [
+  'Geometric deep learning',
+  'Expressive power of graph neural networks and the Weisfeiler-Leman hierarchy',
+  'Spectral methods and canonicalization for graphs',
+  'Equivariant and invariant neural networks',
+  'Approximation theory for symmetry-constrained models',
+  'Machine learning for molecules and 3D point clouds',
 ];

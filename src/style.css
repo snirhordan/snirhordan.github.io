@@ -284,11 +284,16 @@ h3 {
   color: var(--text-2);
 }
 
-/* ===== Research highlights ===== */
-.highlight { padding: 4px 0 18px; }
-.highlight + .highlight { padding-top: 16px; border-top: 1px solid var(--rule); }
-.highlight p { margin-top: 6px; color: var(--text-2); }
-.highlight .read-more { display: inline-block; margin-top: 6px; font-size: 0.95rem; }
+/* ===== Research interests ===== */
+.interests-list {
+  list-style: disc;
+  padding-left: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 32px;
+  color: var(--text-2);
+}
+.interests-list li::marker { color: var(--muted); }
 
 /* ===== Simple lists (talks) and entries (code, teaching) ===== */
 .plain-list { list-style: none; }
@@ -367,6 +372,7 @@ footer {
   .dated-list li { grid-template-columns: 1fr; gap: 0; padding: 8px 0; }
   .pub--featured { padding: 14px; }
   .entry-head { flex-direction: column; gap: 0; }
+  .interests-list { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
