@@ -1,7 +1,7 @@
 export const siteData = {
   name: 'Snir Hordan',
   title: 'PhD Candidate, Applied Mathematics',
-  bio: 'I research machine learning models that process geometric data such as graphs and point clouds. My work focuses on identifying fundamental limitations of geometric models and developing provably complete architectures with moderate computational cost. These methods have direct applications in drug discovery, molecular simulation, and 3D computer vision.',
+  bio: 'I develop deep learning methods for data with geometric structure, such as graphs and point clouds. My work identifies fundamental limitations of geometric models and designs provably complete architectures with moderate computational cost. At Oxford, I will extend this work to generative modeling on structured data and to geometric deep learning for biological applications, such as molecular and protein design.',
   affiliation: {
     university: { name: 'Technion, Israel Institute of Technology', url: 'https://www.technion.ac.il/' },
     faculty: 'Faculty of Mathematics',
