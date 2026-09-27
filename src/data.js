@@ -134,7 +134,7 @@ export const publications = [
     titleUrl: 'https://arxiv.org/abs/2605.11008',
     authors: [
       { name: 'Yonatan Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
-      { name: 'Benjamin Friedman' },
+      { name: 'Benjy Friedmann' },
       { name: 'Snir Hordan', bold: true },
       { name: 'Nadav Dym', url: 'https://nadavdym.github.io/' },
     ],
@@ -267,7 +267,7 @@ export const collaborators = [
   { name: 'Gur Lifshitz', url: 'https://www.semanticscholar.org/author/2052395556' },
   { name: 'Yonatan Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
   { name: 'Tim Seppelt', url: 'https://tseppelt.github.io/' },
-  { name: 'Benjamin Friedman' },
+  { name: 'Benjy Friedmann' },
 ];
 
 export const teaching = [
