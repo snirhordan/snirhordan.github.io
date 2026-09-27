@@ -2,16 +2,16 @@ import { teaching } from '../data'
 
 export default function Teaching() {
   return (
-    <section id="teaching" className="section-card">
+    <section id="teaching">
       <h2>Teaching</h2>
       {teaching.map((item, i) => (
-        <div key={i} className="teaching-item">
-          <div className="teaching-header">
+        <div key={i} className="entry">
+          <div className="entry-head">
             <h3>{item.title}</h3>
-            <span className="teaching-year">{item.years}</span>
+            <span className="entry-meta">{item.years}</span>
           </div>
-          <p className="teaching-role">{item.role}</p>
-          <p className="teaching-details" dangerouslySetInnerHTML={{ __html: item.details }} />
+          <p className="entry-role">{item.role}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.details }} />
         </div>
       ))}
     </section>

@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 export default function PublicationCard({ pub }) {
   const [abstractOpen, setAbstractOpen] = useState(false)
+  const abstractId = `abstract-${pub.id}`
 
   const authorElements = pub.authors.flatMap((author, i) => {
     let el
@@ -15,42 +16,35 @@ export default function PublicationCard({ pub }) {
     return i < pub.authors.length - 1 ? [el, ', '] : [el]
   })
 
+  const isPreprint = pub.venueShort === 'arXiv'
+
   return (
-    <div className={'pub-card' + (pub.featured ? ' pub-featured' : '')}>
-      {pub.image && (
-        <div className="pub-thumb">
-          <img src={pub.image} alt={pub.imageAlt} />
-        </div>
-      )}
-      <div className="pub-details">
-        {pub.featured && <span className="pub-featured-badge">Featured</span>}
-        <h3 className="pub-title">
-          <a href={pub.titleUrl}>{pub.title}</a>
-        </h3>
-        <p className="pub-authors">{authorElements}</p>
-        <p className="pub-venue">
-          {pub.venue} (<strong>{pub.venueShort}</strong>), {pub.year}
-          {pub.spotlight && <span className="spotlight">{pub.spotlight}</span>}
-        </p>
-        <div className="pub-links">
-          {pub.links.map((link) => (
-            <a key={link.label} href={link.url} className="pub-btn">{link.label}</a>
-          ))}
-          {pub.videoUrl && (
-            <a href={pub.videoUrl} className="pub-btn pub-btn-video">Video</a>
-          )}
-          <button
-            className="pub-btn abstract-toggle"
-            onClick={() => setAbstractOpen(!abstractOpen)}
-            aria-expanded={abstractOpen}
-          >
-            {abstractOpen ? 'Close' : 'Abstract'}
-          </button>
-        </div>
-        <div className={'abstract-content' + (abstractOpen ? ' open' : '')}>
-          {pub.abstract}
-        </div>
+    <article className={'pub' + (pub.featured ? ' pub--featured' : '')}>
+      {pub.featured && <p className="pub-label">Featured</p>}
+      <h3 className="pub-title">
+        <a href={pub.titleUrl}>{pub.title}</a>
+      </h3>
+      <p className="pub-authors">{authorElements}</p>
+      <p className="pub-venue">
+        {isPreprint ? <em>{pub.venue}</em> : <><em>{pub.venue}</em> ({pub.venueShort})</>}, {pub.year}
+        {pub.spotlight && <> &middot; <span className="spotlight">{pub.spotlight}</span></>}
+      </p>
+      <div className="pub-links">
+        {pub.links.map((link) => (
+          <a key={link.label} href={link.url}>{link.label}</a>
+        ))}
+        {pub.videoUrl && <a href={pub.videoUrl}>Video</a>}
+        <button
+          className="text-btn"
+          style={{ marginTop: 0 }}
+          onClick={() => setAbstractOpen(!abstractOpen)}
+          aria-expanded={abstractOpen}
+          aria-controls={abstractId}
+        >
+          {abstractOpen ? 'Hide abstract' : 'Abstract'}
+        </button>
       </div>
-    </div>
+      {abstractOpen && <p id={abstractId} className="pub-abstract">{pub.abstract}</p>}
+    </article>
   )
 }
