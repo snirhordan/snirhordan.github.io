@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
 import About from './components/About'
 import News from './components/News'
-import Insights from './components/Insights'
+import ResearchInterests from './components/ResearchInterests'
 import Awards from './components/Awards'
 import Publications from './components/Publications'
 import Talks from './components/Talks'
@@ -16,9 +16,9 @@ export default function App() {
       <Navbar />
       <main>
         <About />
+        <ResearchInterests />
         <News />
         <Publications />
-        <Insights />
         <Awards />
         <Talks />
         <Teaching />
