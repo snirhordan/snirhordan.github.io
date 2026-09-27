@@ -18,12 +18,10 @@ export const siteData = {
 };
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
   { label: 'News', href: '#news' },
   { label: 'Publications', href: '#publications' },
-  { label: 'Research Insights', href: '#insights' },
+  { label: 'Research', href: '#research' },
   { label: 'Awards', href: '#awards' },
-  { label: 'Code', href: '#code' },
   { label: 'Talks', href: '#talks' },
   { label: 'CV', href: 'snir_hordan_cv.pdf' },
 ];

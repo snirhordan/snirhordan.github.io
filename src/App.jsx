@@ -1,4 +1,3 @@
-import useScrollReveal from './hooks/useScrollReveal'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import News from './components/News'
@@ -13,21 +12,20 @@ import Teaching from './components/Teaching'
 import Footer from './components/Footer'
 
 export default function App() {
-  useScrollReveal()
   return (
     <>
       <Navbar />
-      <main role="main">
+      <main>
         <About />
         <News />
         <Publications />
         <Insights />
         <Awards />
-        <Code />
         <Talks />
         <Teaching />
-        <Skills />
+        <Code />
         <Collaborators />
+        <Skills />
       </main>
       <Footer />
     </>
