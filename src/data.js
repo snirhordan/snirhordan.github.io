@@ -30,6 +30,10 @@ export const navLinks = [
 
 export const newsItems = [
   {
+    date: 'Sep 2026',
+    content: 'Two papers accepted at <strong>NeurIPS 2026</strong>: <strong><a href="https://arxiv.org/abs/2605.23446">PRiSM</a></strong> (Weisfeiler-Leman is incomplete on simple-spectrum graphs) as a <span class="spotlight">Spotlight (top 1.3%)</span>, and <strong><a href="https://arxiv.org/abs/2605.11008">When and How to Canonize</a></strong>.',
+  },
+  {
     date: 'July 2026',
     content: 'Mentored a student team at the <strong><a href="https://www.logml.ai/">London Geometry and Machine Learning Summer School (LogML 2026)</a></strong>, leading a project on canonicalizing symmetric molecular point clouds.',
   },
@@ -107,13 +111,34 @@ export const publications = [
       { name: 'N Dym', url: 'https://nadavdym.github.io/' },
       { name: 'T Seppelt', url: 'https://tseppelt.github.io/' },
     ],
-    venue: 'arXiv preprint',
-    venueShort: 'arXiv',
+    venue: 'Conference on Neural Information Processing Systems',
+    venueShort: 'NeurIPS',
     year: 2026,
+    spotlight: 'Spotlight, top 1.3%',
     image: null,
     abstract: 'Graphs with a simple spectrum admit cubic-time isomorphism testing, yet we prove that for every k, the k-Weisfeiler-Leman (k-WL) test cannot distinguish all non-isomorphic graphs with a simple spectrum. Since the WL hierarchy upper-bounds the distinguishing power of GNNs, this incompleteness rules out completeness for every k-WL-aligned GNN family. To close this gap, we introduce PRiSM (Partition, Refine, Solve, Match), the first provably complete canonicalization of simple-spectrum eigendecompositions. Composed with DeepSets or a Transformer, PRiSM achieves universal approximation on simple-spectrum graphs — justifying canonicalized Laplacian positional encodings — and matches or outperforms existing spectral canonicalizations on graph regression, classification, and expressivity benchmarks.',
     links: [
       { label: 'arXiv', url: 'https://arxiv.org/abs/2605.23446' },
+    ],
+  },
+  {
+    id: 'canonize-generalization',
+    title: 'When and How to Canonize: A Generalization Perspective',
+    titleUrl: 'https://arxiv.org/abs/2605.11008',
+    authors: [
+      { name: 'Y Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
+      { name: 'B Friedman' },
+      { name: 'S Hordan', bold: true },
+      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
+    ],
+    venue: 'Conference on Neural Information Processing Systems',
+    venueShort: 'NeurIPS',
+    year: 2026,
+    image: null,
+    abstract: 'When should invariance be achieved by canonization rather than by an invariant architecture? We develop a theoretical framework that bounds the generalization error of group averaging and canonization via covering numbers, establishing a hierarchy: canonized models are at best as tight as structurally invariant and group-averaged models, and at worst as loose as non-invariant baselines, depending on the regularity of the canonization. Applied to point clouds, the framework proves that lexicographical sorting has a covering number growing exponentially with dimension, whereas Hilbert-curve canonization grows only polynomially — the first formal justification for the empirical success of Hilbert-curve serialization in state-of-the-art point cloud architectures.',
+    links: [
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2605.11008' },
+      { label: 'Code', url: 'https://github.com/yonatansverdlov/Canonization' },
     ],
   },
   {
@@ -134,26 +159,6 @@ export const publications = [
     abstract: 'The universal approximation theorem establishes that neural networks can approximate any continuous function on a compact set. Later works in approximation theory provide quantitative approximation rates for ReLU networks on the class of α-Hölder functions f: [0,1]^N → ℝ. The goal of this paper is to provide similar quantitative approximation results in the context of group equivariant learning, where the learned α-Hölder function is known to obey certain group symmetries. While there has been much interest in the literature in understanding the universal approximation properties of equivariant models, very few quantitative approximation results are known for equivariant models. In this paper, we bridge this gap by deriving quantitative approximation rates for several prominent group-equivariant and invariant architectures. The architectures that we consider include: the permutation-invariant Deep Sets architecture; the permutation-equivariant Sumformer and Transformer architectures; joint invariance to permutations and rigid motions using invariant networks based on frame averaging; and general bi-Lipschitz invariant models. Overall, we show that equally-sized ReLU MLPs and equivariant architectures are equally expressive over equivariant functions. Thus, hard-coding equivariance does not result in a loss of expressivity or approximation power in these models.',
     links: [
       { label: 'arXiv', url: 'https://arxiv.org/abs/2602.20370' },
-    ],
-  },
-  {
-    id: 'canonize-generalization',
-    title: 'When and How to Canonize: A Generalization Perspective',
-    titleUrl: 'https://arxiv.org/abs/2605.11008',
-    authors: [
-      { name: 'Y Sverdlov', url: 'https://scholar.google.com/citations?user=M4o74roAAAAJ&hl=en' },
-      { name: 'B Friedman' },
-      { name: 'S Hordan', bold: true },
-      { name: 'N Dym', url: 'https://nadavdym.github.io/' },
-    ],
-    venue: 'arXiv preprint',
-    venueShort: 'arXiv',
-    year: 2026,
-    image: null,
-    abstract: 'When should invariance be achieved by canonization rather than by an invariant architecture? We develop a theoretical framework that bounds the generalization error of group averaging and canonization via covering numbers, establishing a hierarchy: canonized models are at best as tight as structurally invariant and group-averaged models, and at worst as loose as non-invariant baselines, depending on the regularity of the canonization. Applied to point clouds, the framework proves that lexicographical sorting has a covering number growing exponentially with dimension, whereas Hilbert-curve canonization grows only polynomially — the first formal justification for the empirical success of Hilbert-curve serialization in state-of-the-art point cloud architectures.',
-    links: [
-      { label: 'arXiv', url: 'https://arxiv.org/abs/2605.11008' },
-      { label: 'Code', url: 'https://github.com/yonatansverdlov/Canonization' },
     ],
   },
   {
