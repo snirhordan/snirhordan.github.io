@@ -1,7 +1,7 @@
 import { siteData } from '../data'
 
 export default function About() {
-  const { name, title, bio, affiliation, links } = siteData
+  const { name, title, bio, affiliation, nextPosition, links } = siteData
 
   return (
     <section id="about" className="about-section">
@@ -17,6 +17,11 @@ export default function About() {
           <p className="about-affiliation">
             {affiliation.faculty} &middot; Advised by <a href={affiliation.supervisor.url}>{affiliation.supervisor.name}</a>
           </p>
+          {nextPosition && (
+            <p className="about-title about-next">
+              {nextPosition.role}, <a href={nextPosition.institution.url}>{nextPosition.institution.name}</a>
+            </p>
+          )}
           <p className="about-bio">{bio}</p>
           <nav className="about-links" aria-label="Contact and profiles">
             <a href={links.email}>Email</a>

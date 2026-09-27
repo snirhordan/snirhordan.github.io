@@ -7,6 +7,10 @@ export const siteData = {
     faculty: 'Faculty of Mathematics',
     supervisor: { name: 'Asst. Prof. Nadav Dym', url: 'https://nadavdym.github.io/' },
   },
+  nextPosition: {
+    role: 'Incoming Postdoctoral Researcher',
+    institution: { name: 'University of Oxford', url: 'https://www.ox.ac.uk/' },
+  },
   links: {
     email: 'mailto:snirhordan@campus.technion.ac.il',
     scholar: 'https://scholar.google.com/citations?user=T2YJQPoAAAAJ&hl=en',
