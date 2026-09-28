@@ -273,7 +273,7 @@ export const collaborators = [
 export const teaching = [
   {
     title: 'Deep Learning and Groups',
-    years: '2024, 2025',
+    years: '2024–2026',
     role: 'Head Teaching Assistant',
     details: 'Technion, Electrical and Computer Engineering Faculty. Co-wrote a new course with <a href="https://haggaim.github.io/">Asst. Prof. Haggai Maron</a>.',
   },
